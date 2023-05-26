@@ -60,7 +60,7 @@ class Ghost {
 	protected $garray = null;
 	protected $instead_of_1 = 0;
 	protected $date_format = 'Y-m-d\TH:i:sP';
-	protected $ghost_image_base = 'content/images/wordpress';
+	protected $ghost_image_base = 'content/images';
 
 	/**
 	 * Initialize the plugin by setting localization, filters, and administration functions.
