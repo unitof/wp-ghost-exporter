@@ -369,7 +369,7 @@ class Ghost {
 					'status'			=> substr( $status, 0, 150 ),
 					'meta_title'		=> $post_meta_title,
 					'meta_description'	=> $post_meta_deck,
-					'custom_excerpt'	=> substr( $post_meta_deck, 300 ),
+					'custom_excerpt'	=> $post_meta_deck ? substr( $post_meta_deck, 0, 300 ) : null,
 					'created_at'		=> $this->_get_json_date( $post->post_date ),
 					'updated_at'		=> $this->_get_json_date( $post->post_modified ),
 					'published_at'		=> ($status !== 'draft') ? $this->_get_json_date( $post->post_date ) : null,
